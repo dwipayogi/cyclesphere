@@ -9,14 +9,11 @@ body {
   margin: 50px 10% 0;
   padding: 0;
 }
-header {
-  min-height: 100vh;
-}
 h1 {
   font-size: 64px;
   text-align: center;
   font-weight: 700;
-  color: rgb(0, 89, 255);
+  color: rgb(0, 119, 255);
 }
 .header-img {
   width: 400px;
@@ -40,12 +37,23 @@ h3 {
   text-align: center;
   padding-bottom: 32px;
 }
+section {
+  margin-top: 32px;
+}
 .container {
   display: flex;
   gap: 32px;
   padding: 32px;
 }
+.container-2 {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+}
 .container img {
+  width: 40%;
+}
+.container-2 img {
   width: 40%;
 }
 .detail {
@@ -70,7 +78,7 @@ h4 {
   margin: 200px 0;
 }
 .reason-container {
-  border: 2px solid black;
+  border: 2px solid rgb(0, 119, 255);
   padding: 20px;
 }
 h5 {
@@ -78,6 +86,7 @@ h5 {
   font-weight: 600;
   padding-bottom: 12px;
   text-align: center;
+  color: rgb(0, 119, 255);
 }
 .reason-container p {
   font-size: 18px;
@@ -100,7 +109,7 @@ aside ul {
   list-style: none;
 }
 .collapsible {
-  background-color: rgb(0, 89, 255);
+  background-color: rgb(0, 119, 255);
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -113,7 +122,7 @@ aside ul {
 
 .active,
 .collapsible:hover {
-  background-color: rgb(0, 70, 201);
+  background-color: rgb(0, 87, 185);
 }
 
 .content {
@@ -132,4 +141,56 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container img {
+    width: 100%;
+  }
+  .detail {
+    padding: 0;
+  }
+  .detail p {
+    padding: 0;
+  }
+  .container-2 {
+    flex-direction: column-reverse;
+  }
+  .container-2 img {
+    width: 100%;
+  }
+  #reason {
+    flex-direction: column;
+  }
+  #faq {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  aside img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .faq {
+    width: 100%;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
 }
